@@ -33,7 +33,7 @@ def package_data():
             if ".git" in f.split(os.path.normpath(os.path.join(root, f))):
                 # Prevent the repo from being added.
                 continue
-            file_name = os.path.relpath(os.path.join(root, f), "athanor_factions")
+            file_name = os.path.relpath(os.path.join(root, f), "athanor_jobs")
             file_set.append(file_name)
     return file_set
 
